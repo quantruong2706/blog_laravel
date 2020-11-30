@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/bai-viet', 'ArticleController@view') -> name('ArticleView');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
